@@ -1,3 +1,3 @@
 # Online-Quiz-Platform
-This is a Java Based project using Html, Css, Javascript, Servlet and Jsp
+This is a Java Based project using Html, Css, Javascript, Servlet and Jsp.
 Online Quiz Platform which enables the user to take quiz followed by different questions. The user has to first register himself/herself in the plaform and then only he will able to apply for the quiz. The answers will be evaluated based on the user choice of answers and final score with the correct answer will be displayed to the user. The user also can send a feedback if he/she required. All the login credentials,questions and answers are already stored in database. After the user completes his/her quiz, the final score will also be updated in the database(oracle). 
