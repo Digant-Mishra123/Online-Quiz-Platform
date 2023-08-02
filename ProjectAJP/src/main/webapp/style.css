@@ -1,0 +1,245 @@
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+    /*::-webkit-scrollbar {
+        width: 1em;
+      }
+       
+      ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+      }
+       
+      ::-webkit-scrollbar-thumb {
+        background-color: darkgrey;
+        outline: 1px solid slategrey;
+      }*/
+.page {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.2)), url(./Images/backgroundimage.png);
+    background-size:cover;
+    position: absolute;
+    background-position: center;
+    filter: blur(5px);
+  -webkit-filter: blur(5px);
+  overflow: scroll;
+  transition:3s;
+}
+/* ---------------------------------------------Nav bar menu----------------------------------------------- */
+
+.nav-bar{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    padding: 40px 20px 30px 50px;
+    transition: 2s;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul{
+    display: inline-block;
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 50px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+nav ul li button{
+    font-size: 20px;
+    color: white;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    background: transparent;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+
+nav ul li button:hover{
+    color: aqua;
+}
+
+nav ul li a:hover{
+    color: aqua;
+    text-decoration: underline;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(215, 221, 158);
+    font-size: 28px;
+}
+.logo{
+    font-size: 50px;
+    color: bisque;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 800;
+
+}
+
+
+
+
+/* ---------------------------------------------Login menu----------------------------------------------- */
+
+
+.form-box{
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    height: 480px;
+    position: relative;
+    margin: 2% auto;
+    background-color:rgba(0, 0, 0, 0.575);
+    padding: 10px;
+    overflow:hidden;
+    transition:1s;
+}
+
+.button-box{
+    width: 220px;
+    margin: 30px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+}
+
+.toggle-btn{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    font-weight: 600;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+
+#btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: #f3c693;
+    border-radius: 30px;
+    /* transition: 0.5s; */
+}
+
+.input-group-login{
+    margin-left: 70px;
+    top: 150px;
+    position: absolute;
+    width: 280px;
+    transition: 0.5s;
+}
+
+.input-group-register{
+    margin-left: 70px;
+    top: 100px;
+    position:absolute;
+    width: 280px;
+    transition: 0.5s;
+}
+
+.input-field{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+    transition: 0.5s;
+}
+
+.submit-btn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    font-weight: 600;
+    background: #f3c693;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    margin-top:10px;
+    
+}
+.submit-btn:hover{
+    font-size: 14px;
+    font-stretch: expanded;
+    font-weight: 700;
+    border: 2px solid rgba(255, 255, 255, 0.715);
+    transition: transform 0.5s ease;
+    transform: scale(1.1);
+    
+}
+
+.check-box{
+    margin: 30px 10px;
+}
+
+span{
+    color: #777;
+    font-size: 14px;
+    bottom: 68px;
+    position: absolute;
+}
+
+#login{
+    left: 50px;
+}
+
+#login input{
+    color: white;
+    font-size: 15px;
+    transition: 0.5s;
+}
+
+#register{
+    left: 450px;
+}
+
+#register input{
+    color: white;
+    font-size: 15px;
+    transition: 0.5s;
+}
+
+.section{
+    margin-top: 80px;
+    margin-left: 620px;
+}
+.section button{
+   background-color: #f3c693;
+   padding: 10px 30px;
+   border-radius: 30px;
+}
+.section button p{
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+}
+.section button:hover{
+    border: 2px solid black;
+    background-color: honeydew;
+}

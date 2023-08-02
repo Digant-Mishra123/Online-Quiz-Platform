@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="page"></div>
+    <div class="nav-bar">
+            <div class="logo">QUIZEASY</div>
+                <nav>
+                    <ul id="menu-items">
+                        <li><a href="Homepage.html">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="Services.html">Services</a></li>
+                        <li><a href="Contact.html">Contact Us</a></li>
+                        <li><button class="loginbtn" onclick="document.getElementById('login-form').style.display = 'block'" style="width: auto;"><a href="#">Login</a></button></li>
+                    </ul>
+                </nav>
+            </div>
+        <div id="login-form" class="login-page">
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" onclick="login()" class="toggle-btn">Log In</button>
+                    <button type="button" onclick="register()" class="toggle-btn">Register</button>
+                </div>
+                <form onsubmit="return validateLoginForm()" action="login" method="post" id="login" class="input-group-login" title="Loginform">
+                    <input type="email" class="input-field" name="email" placeholder="Email Id" required>
+                    <input type="password" class="input-field" name="password" placeholder="Enter Password" required>
+                    
+                    
+                    <button type="submit" class="submit-btn">Log in</button>
+                </form>
+
+                <form onsubmit="return validateRegistrationForm()" action="register" method="post" id="register" class="input-group-register" title="Registration">
+                    <input type="text" name="first_name" class="input-field" placeholder="First Name" required>
+                    <input type="text" name="last_name" class="input-field" placeholder="Last Name" required>
+                    <input type="email" name="email" id="email" class="input-field" placeholder="Email Id" required>
+                    <input type="password" name="password" class="input-field" placeholder="Enter Password" required>
+                    <input type="password" name="confirm_password" class="input-field" placeholder="Confirm Password" required>
+                    <input type="checkbox" name="Agree" class="check-box" required>
+                    <label for="Agree" style="color: white;">I Agree to my terms and conditions</label>
+                    <button type="submit" class="submit-btn">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

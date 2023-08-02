@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        /* CSS styles for the contact form */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            background-image:linear-gradient(45deg, #00fff7b1, #ff00a9);
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 40px;
+            text-align: center;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            background-image:linear-gradient(45deg, #ff00a9, #00fff7b1);
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: black;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px 10px;
+            border-radius: 5px;
+            border: 1px solid black;
+            font-size: 16px;
+            color: black;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline:auto;
+            border-color:#41032c;
+        }
+
+        .form-group textarea {
+            height: 50px;
+        }
+
+        .form-group button {
+            background-color: #74064c;
+            color: #fff;
+            padding: 10px 200px;
+            margin-left: 70px;
+            border-radius: 10px;
+            font-size: 20px;
+            transition: background-color 1s ease;
+
+
+        }
+
+        .submit-button:hover {
+            background-color: #74064c;
+            color: #fff;
+            transition: transform 0.5s ease;
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+
+        .contact-info {
+            margin-top: 40px;
+            text-align: center;
+            margin-left: 10px;
+        }
+
+        .contact-info p {
+            margin-bottom: 10px;
+        }
+
+        .contact-info i {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function submitForm() {
+            alert("Thank you for your message! We will get back to you soon.");
+            window.location.href = "Homepage.html";
+        }
+    </script>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form onsubmit="submitForm(); return false;">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Name" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="abc@gmail.com" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+    
+            <div class="form-group">
+                <button type="submit" class="submit-button">Submit</button>
+            </div>
+        </form>
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p><i class="fas fa-map-marker-alt"></i> Silicon Institute Of Technology, Patia, Bhubaneswar</p>
+            <p><i class="fas fa-phone"></i> +91-8328921788</p>
+            <p><i class="fas fa-envelope"></i> cse.21bcsb24@gmail.com</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.about-section {
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  .about-section h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .about-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .about-content p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  .cta-button {
+    display:inline-block;
+    padding: 10px 30px;
+    background-color: #fff;
+    color: #ff00a9;
+    text-decoration: none;
+    border-radius:30px;
+    transition: background-color 0.5s ease;
+    transition: 2s;
+    margin-left: 698px;
+    font-size: 20px;
+    border: 1px solid black;
+}
+
+.cta-button:hover {
+    background-color: #86316a;
+    color: #fff;
+    transition: transform 0.5s ease;
+    transform: scale(1.2);
+
+}
+
+  
